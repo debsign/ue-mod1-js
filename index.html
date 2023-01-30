@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El tiempo</title>
+    <link href="/img/favicon.ico" rel="icon" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style> @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap'); </style>
+    <link href="/css/style.css" rel="stylesheet">
+    <script src="/js/script.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="menu menu-dk">
+            <section class="menu--left">
+                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26"><g fill="none"><path fill="#F05514" d="M13.438 22.771c-5.14 0-9.338-4.196-9.338-9.336 0-5.14 4.197-9.304 9.338-9.304 5.141 0 9.306 4.197 9.306 9.304 0 5.172-4.165 9.336-9.306 9.336zm13.438-9.369-3.058-2.765 1.236-3.936-4.035-.878-.878-4.034-3.937 1.269L13.406 0 10.64 3.058 6.703 1.822l-.879 4.033-4.034.879 1.269 3.936L0 13.467l3.059 2.766-1.237 3.936 4.035.878.878 4.034 3.937-1.269 2.799 3.058 2.765-3.058 3.937 1.236.879-4.034 4.035-.91-1.27-3.937 3.06-2.765z"></path><path fill="#F05514" d="M7.549 7.58a8.328 8.328 0 0 1 11.779 0 8.323 8.323 0 0 1 0 11.775 8.328 8.328 0 0 1-11.78 0c-3.253-3.253-3.253-8.555 0-11.775"></path></g></svg>
+            </section>
+          </nav>         
+    </header>
+    <main class="container">
+        <section id="search">
+            <div id="" class="">
+                <label for="city">Ciudad:</label><br>
+                <input type="text" id="city" name="city">
+                <input onclick="getCity()" class="btn" value="Ver el tiempo">
+            </div>
+        </section>
+        <section id="results">
+            <div class="content">
+                <div class="card card1">
+                    <p class="date"></p>
+                    <div class="weather__img"></div>
+                    <div class="temperature">
+                        <div class="temperature__min"></div>º
+                        <div style="padding-inline: 4px;">/</div>
+                        <div class="temperature__max"></div>º
+                    </div>
+                    <div class="rain">
+                        <p>Lluvia:</p><p class="rain__value"></p><p>mm</p>
+                    </div>
+                    <div class="wind">
+                        <p>Viento:</p><p class="wind__value"></p><p>km/h</p>
+                    </div>
+                </div>
+                <div class="card card2">
+                    <p class="date"></p>
+                    <div class="weather__img"></div>
+                    <div class="temperature">
+                        <div class="temperature__min"></div>º
+                        <div style="padding-inline: 4px;">/</div>
+                        <div class="temperature__max"></div>º
+                    </div>
+                    <div class="rain">
+                        <p>Lluvia:</p><p class="rain__value"></p><p>mm</p>
+                    </div>
+                    <div class="wind">
+                        <p>Viento:</p><p class="wind__value"></p><p>km/h</p>
+                    </div>
+                </div>
+                <div class="card card3">
+                    <p class="date"></p>
+                    <div class="weather__img"></div>
+                    <div class="temperature">
+                        <div class="temperature__min"></div>º
+                        <div style="padding-inline: 4px;">/</div>
+                        <div class="temperature__max"></div>º
+                    </div>
+                    <div class="rain">
+                        <p>Lluvia:</p><p class="rain__value"></p><p>mm</p>
+                    </div>
+                    <div class="wind">
+                        <p>Viento:</p><p class="wind__value"></p><p>km/h</p>
+                    </div>
+                </div>
+                <div class="card card4">
+                    <p class="date"></p>
+                    <div class="weather__img"></div>
+                    <div class="temperature">
+                        <div class="temperature__min"></div>º
+                        <div style="padding-inline: 4px;">/</div>
+                        <div class="temperature__max"></div>º
+                    </div>
+                    <div class="rain">
+                        <p>Lluvia:</p><p class="rain__value"></p><p>mm</p>
+                    </div>
+                    <div class="wind">
+                        <p>Viento:</p><p class="wind__value"></p><p>km/h</p>
+                    </div>
+                </div>
+                <div class="card card5">
+                    <p class="date"></p>
+                    <div class="weather__img"></div>
+                    <div class="temperature">
+                        <div class="temperature__min"></div>º
+                        <div style="padding-inline: 4px;">/</div>
+                        <div class="temperature__max"></div>º
+                    </div>
+                    <div class="rain">
+                        <p>Lluvia:</p><p class="rain__value"></p><p>mm</p>
+                    </div>
+                    <div class="wind">
+                        <p>Viento:</p><p class="wind__value"></p><p>km/h</p>
+                    </div>
+                </div>
+                <div class="card card6">
+                    <p class="date"></p>
+                    <div class="weather__img"></div>
+                    <div class="temperature">
+                        <div class="temperature__min"></div>º
+                        <div style="padding-inline: 4px;">/</div>
+                        <div class="temperature__max"></div>º
+                    </div>
+                    <div class="rain">
+                        <p>Lluvia:</p><p class="rain__value"></p><p>mm</p>
+                    </div>
+                    <div class="wind">
+                        <p>Viento:</p><p class="wind__value"></p><p>km/h</p>
+                    </div>
+                </div>
+                <div class="card card7">
+                    <p class="date"></p>
+                    <div class="weather__img"></div>
+                    <div class="temperature">
+                        <div class="temperature__min"></div>º
+                        <div style="padding-inline: 4px;">/</div>
+                        <div class="temperature__max"></div>º
+                    </div>
+                    <div class="rain">
+                        <p>Lluvia:</p><p class="rain__value"></p><p>mm</p>
+                    </div>
+                    <div class="wind">
+                        <p>Viento:</p><p class="wind__value"></p><p>km/h</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="errorresults">
+            <p>No se ha podido extraer el tiempo para esa ciudad</p>
+        </section>
+    </main>
+    <footer>
+        <ul>
+            <li><span>© 2023 El tiempo en...</span></li>
+        </ul>
+    </footer>
+</body>
+</html>
