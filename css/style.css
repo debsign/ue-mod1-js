@@ -95,8 +95,15 @@ nav.menu {
     border-bottom: 0.1rem solid #DCDEDD;
     padding: 1rem;
 } 
-nav.menu section.menu--left a {
-    margin-right: 1rem;
+.logo--title {
+    display: flex;
+    align-items: center;
+}
+.logo--title p {
+    color: #fff;
+    padding-inline: 1rem;
+    font-weight: bold;
+    margin: 0;
 }
 /* main */
 main {
